@@ -5,23 +5,24 @@ const word = 'javascript';
 // Dichiara la funzione qui.
 function vocalCheck (){
     let characterStorage = [];
-    const vocali = ['a', 'e', 'i', 'o', 'u'];
+    const vocals = ["a", "e", "i", "o", "u"];
 
     for (let i = 0; i < word.length; i++){
         
         let charcterCounter = word[i];
         console.log(charcterCounter);
 
-        if(charcterCounter.includes(vocali[i])) {
-            characterStorage.push(charcterCounter[i])
+        if(word[i].includes(vocals)){
+            characterStorage.push(word[i])
         }
     }
 
-    return console.log(characterStorage);
+    return characterStorage
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 let vocalsInWord = vocalCheck();
+console.log(vocalsInWord)
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 
