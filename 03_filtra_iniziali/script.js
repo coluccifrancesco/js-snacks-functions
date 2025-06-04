@@ -2,12 +2,25 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
+let letterChoice = "A";
+
 
 // Dichiara la funzione qui.
-
+function initialLocator (){
+    let singleNames = []
+    
+    for (let i = 0; i < names.length; i++){
+        
+        if(names[i].includes(letterChoice)){
+            singleNames.push(names[i])
+        }
+    }
+    
+    console.log(singleNames)
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+initialLocator()
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
