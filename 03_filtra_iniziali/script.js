@@ -11,3 +11,5 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+//  http://127.0.0.1:3000/03_filtra_iniziali/index.html
