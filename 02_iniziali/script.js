@@ -21,7 +21,3 @@ showInit()
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
-
-
-
-//  http://127.0.0.1:3000/02_iniziali/index.html
