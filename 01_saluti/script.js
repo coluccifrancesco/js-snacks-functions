@@ -1,5 +1,3 @@
-// http://127.0.0.1:3000/01_saluti/index.html
-
 // Scrivi una funzione che accetti una stringa contenente un nome e restituisca un saluto seguito dal nome fornito (es. "Ciao [nome]")
 
 const userName = prompt('Inserisci il tuo nome');
