@@ -3,27 +3,26 @@
 const word = 'javascript';
 
 // Dichiara la funzione qui.
-function vocalCheck (){
-    let characterStorage = [];
-    const vocals = ["a", "e", "i", "o", "u"];
+function countVowels(str){
 
-    for (let i = 0; i < word.length; i++){
+    let counter = 0;
+    const vowels = 'aeiou';
+
+    for(let i = 0; i < str.length; i++){
         
-        let charcterCounter = word[i];
-        console.log(charcterCounter);
+        const thisChar = str[i];
 
-        if(word[i].includes(vocals)){
-            characterStorage.push(word[i])
+        if(vowels.includes(thisChar)){
+            counter++ // = counter + 1
         }
     }
-
-    return characterStorage
+    
+    return counter;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-let vocalsInWord = vocalCheck();
-console.log(vocalsInWord)
-
+const totalVowels = countVowels(word);
+console.log(totalVowels)
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 
 //  http://127.0.0.1:3000/04_conta_vocali/index.html
