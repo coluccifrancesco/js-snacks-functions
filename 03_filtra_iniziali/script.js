@@ -6,6 +6,8 @@ let letterChoice = "A";
 
 
 // Dichiara la funzione qui.
+
+// Da aggiustare il principio di località
 function initialLocator (){
     let singleNames = [];
     
