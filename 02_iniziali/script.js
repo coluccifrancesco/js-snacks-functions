@@ -8,16 +8,20 @@ function showInit (){
     let initLocator = []
 
     for (let i = 0; i < names.length; i++){
-        let namesDisplay = names[i];
+        let namesDisplay = names[i] // .charAt(0);
+       
+        // initLocator.push(namesDisplay.slice(0, 1));
+ 
+        initLocator.push(namesDisplay[0]);
 
-        initLocator.push(namesDisplay.slice(0, 1));
+        // 3 modi per ottenere il risultato
     }
 
-    return console.log(initLocator)
+    return initLocator
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-showInit()
+console.log(showInit())
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
